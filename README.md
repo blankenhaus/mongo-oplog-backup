@@ -41,6 +41,12 @@ Install latest development version:
     cd mongo-oplog-backup
     rake install
 
+### Dependencies
+
+The following mongoDB tools are required:
+ * mongo shell
+ * mongodump (>= 3.0)
+
 ## Usage
 
 To backup from localhost to the `mybackup` directory.

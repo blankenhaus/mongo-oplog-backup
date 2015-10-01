@@ -62,7 +62,7 @@ module MongoOplogBackup
     end
 
     def mongodump(*args)
-      exec(['mongodump'] + command_line_options + args.flatten)
+      exec(['mongodump'] + command_line_options + ['--excludeCollection', 'system.profile'] + args.flatten)
     end
 
     def mongo(db, script)
